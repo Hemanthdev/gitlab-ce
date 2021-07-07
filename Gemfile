@@ -186,7 +186,7 @@ gem "virtus"
 
 group :development do
   gem "annotate", "~> 2.6.0.beta2"
-  gem "letter_opener"
+  gem "letter_opener", ">= 1.1.2"
   gem 'quiet_assets', '~> 1.0.1'
   gem 'rack-mini-profiler', require: false
 
@@ -212,7 +212,7 @@ group :development, :test do
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
-  gem "launchy"
+  gem "launchy", ">= 2.4.2"
   gem 'factory_girl_rails'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
@@ -243,8 +243,8 @@ end
 group :test do
   gem "simplecov", require: false
   gem "shoulda-matchers", "~> 2.1.0"
-  gem 'email_spec'
-  gem "webmock"
+  gem 'email_spec', '>= 1.5.0'
+  gem "webmock", ">= 1.16.0"
   gem 'test_after_commit'
 end
 
