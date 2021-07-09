@@ -85,7 +85,7 @@ gem "github-markup"
 # Required markup gems by github-markdown
 gem 'redcarpet', '~> 3.1.2'
 gem 'RedCloth'
-gem 'rdoc', '~>3.6'
+gem 'rdoc', '~> 6.3', '>= 6.3.1'
 gem 'org-ruby'
 gem 'creole', '~>0.3.6'
 gem 'wikicloth', '=0.8.1'
@@ -197,7 +197,7 @@ group :development do
   gem 'rails_best_practices'
 
   # Docs generator
-  gem "sdoc"
+  gem "sdoc", ">= 1.0.0"
 
   # thin instead webrick
   gem 'thin'
