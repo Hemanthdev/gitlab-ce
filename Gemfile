@@ -37,7 +37,7 @@ gem "gitlab_git", '~> 6.0'
 gem 'gitlab-grack', '~> 2.0.0.pre', require: 'grack'
 
 # LDAP Auth
-gem 'gitlab_omniauth-ldap', '1.1.0', require: "omniauth-ldap"
+gem 'gitlab_omniauth-ldap', '2.2.0', require: "omniauth-ldap"
 
 # Git Wiki
 gem 'gollum-lib', '~> 3.0.0'
@@ -92,7 +92,7 @@ gem 'wikicloth', '=0.8.1'
 gem 'asciidoctor', '= 0.1.4'
 
 # Diffs
-gem 'diffy', '~> 3.0.3'
+gem 'diffy', '~> 3.4.1'
 
 # Application server
 group :unicorn do
