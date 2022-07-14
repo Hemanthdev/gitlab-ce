@@ -8,10 +8,10 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 4.1.0"
+gem "rails", "~> 5.2.8", ">= 5.2.8.1"
 
 # Make links from text
-gem 'rails_autolink', '~> 1.1'
+gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
 
 # Default values for AR models
 gem "default_value_for", "~> 3.0.0"
@@ -104,7 +104,7 @@ end
 gem "state_machine"
 
 # Issue tags
-gem "acts-as-taggable-on"
+gem "acts-as-taggable-on", ">= 3.1.0"
 
 # Background jobs
 gem 'slim'
