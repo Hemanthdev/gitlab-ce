@@ -92,7 +92,7 @@ gem 'wikicloth', '=0.8.1'
 gem 'asciidoctor', '= 0.1.4'
 
 # Diffs
-gem 'diffy', '~> 3.0.3'
+gem 'diffy', '~> 3.4.1'
 
 # Application server
 group :unicorn do
