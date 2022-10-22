@@ -40,7 +40,7 @@ gem 'gitlab-grack', '~> 2.0.0.pre', require: 'grack'
 gem 'gitlab_omniauth-ldap', '2.2.0', require: "omniauth-ldap"
 
 # Git Wiki
-gem 'gollum-lib', '~> 3.0.0'
+gem 'gollum-lib', '~> 4.2.7'
 
 # Language detection
 gem "gitlab-linguist", "~> 3.0.0", require: "linguist"
@@ -70,7 +70,7 @@ gem "carrierwave"
 gem 'dropzonejs-rails'
 
 # for aws storage
-gem "fog", "~> 1.14", group: :aws
+gem "fog", "~> 1.21", ">= 1.21.0", group: :aws
 gem "unf", group: :aws
 
 # Authorization
@@ -149,7 +149,7 @@ gem "d3_rails", "~> 3.1.4"
 gem "underscore-rails", "~> 1.4.4"
 
 # Sanitize user input
-gem "sanitize", '~> 2.0'
+gem "sanitize", "~> 2.1", ">= 2.1.0"
 
 # Protect against bruteforcing
 gem "rack-attack"
@@ -208,7 +208,7 @@ group :development, :test do
   # gem 'rails-dev-tweaks'
   gem 'spinach-rails'
   gem "rspec-rails"
-  gem "capybara", '~> 2.2.1'
+  gem "capybara", "~> 2.2.1"
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
