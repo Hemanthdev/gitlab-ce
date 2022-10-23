@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 5.2.8", ">= 5.2.8.1"
+gem "rails", "~> 4.1.1"
 
 # Make links from text
 gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
@@ -23,7 +23,7 @@ gem "pg", group: :postgres
 # Auth
 gem "devise", '3.2.4'
 gem "devise-async", '0.9.0'
-gem 'omniauth', '~> 2.0.0'
+gem 'omniauth', '~> 1.1.4'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-github', '>= 2.0.0'
@@ -96,7 +96,7 @@ gem 'diffy', '~> 3.0.3'
 
 # Application server
 group :unicorn do
-  gem "unicorn", '~> 4.6.3'
+  gem "unicorn", "~> 4.6.3"
   gem 'unicorn-worker-killer'
 end
 
@@ -143,7 +143,7 @@ gem "gemnasium-gitlab-service", "~> 0.2"
 gem "slack-notifier", "~> 0.3.2"
 
 # d3
-gem "d3_rails", "~> 3.1.4"
+gem "d3_rails", "~> 3.1.10"
 
 # underscore-rails
 gem "underscore-rails", "~> 1.4.4"
@@ -163,7 +163,7 @@ gem 'mousetrap-rails'
 # Semantic UI Sass for Sidebar
 gem 'semantic-ui-sass', '~> 0.16.1.0'
 
-gem "sass-rails", '~> 4.0.2'
+gem "sass-rails", "~> 4.0.3"
 gem "coffee-rails"
 gem "uglifier"
 gem "therubyracer"
@@ -177,9 +177,9 @@ gem "jquery-ui-rails"
 gem "jquery-scrollto-rails"
 gem "raphael-rails", "~> 2.1.2"
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
+gem "font-awesome-rails", "~> 3.2", ">= 3.2.1.3"
 gem "gitlab_emoji", "~> 0.0.1.1"
-gem "gon", '~> 5.0.0'
+gem "gon", "~> 5.0.1"
 gem 'nprogress-rails'
 gem 'request_store'
 gem "virtus"
@@ -187,7 +187,7 @@ gem "virtus"
 group :development do
   gem "annotate", "~> 2.6.0.0"
   gem "letter_opener"
-  gem 'quiet_assets', '~> 1.0.1'
+  gem 'quiet_assets', '~> 1.0.2'
   gem 'rack-mini-profiler', require: false
 
   # Better errors handler
@@ -208,7 +208,7 @@ group :development, :test do
   # gem 'rails-dev-tweaks'
   gem 'spinach-rails'
   gem "rspec-rails"
-  gem "capybara", '~> 2.2.1'
+  gem "capybara", "~> 2.2.1"
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
