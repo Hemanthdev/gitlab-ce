@@ -112,7 +112,7 @@ gem 'sinatra', require: nil
 gem 'sidekiq', '2.17.0'
 
 # HTTP requests
-gem "httparty"
+gem "httparty", ">= 0.21.0"
 
 # Colored output to console
 gem "colored"
