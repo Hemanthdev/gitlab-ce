@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 5.2.8", ">= 5.2.8.1"
+gem "rails", "~> 5.0.0"
 
 # Make links from text
 gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
@@ -21,9 +21,9 @@ gem "mysql2", group: :mysql
 gem "pg", group: :postgres
 
 # Auth
-gem "devise", '3.2.4'
-gem "devise-async", '0.9.0'
-gem 'omniauth', '~> 2.0.0'
+gem "devise", "4.0.0"
+gem "devise-async", "1.0.0"
+gem 'omniauth', '~> 1.1.4'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
 gem 'omniauth-github', '>= 2.0.0'
@@ -96,7 +96,7 @@ gem 'diffy', '~> 3.0.3'
 
 # Application server
 group :unicorn do
-  gem "unicorn", '~> 4.6.3'
+  gem "unicorn", "~> 4.6.3"
   gem 'unicorn-worker-killer'
 end
 
@@ -108,7 +108,7 @@ gem "acts-as-taggable-on", ">= 3.1.0"
 
 # Background jobs
 gem 'slim'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 2.0.0', require: nil
 gem 'sidekiq', '2.17.0'
 
 # HTTP requests
@@ -125,7 +125,7 @@ gem "foreman"
 gem 'version_sorter'
 
 # Cache
-gem "redis-rails"
+gem "redis-rails", ">= 5.0.0"
 
 # Campfire integration
 gem 'tinder', '~> 1.9.2'
@@ -143,7 +143,7 @@ gem "gemnasium-gitlab-service", "~> 0.2"
 gem "slack-notifier", "~> 0.3.2"
 
 # d3
-gem "d3_rails", "~> 3.1.4"
+gem "d3_rails", "~> 3.1.10"
 
 # underscore-rails
 gem "underscore-rails", "~> 1.4.4"
@@ -163,8 +163,8 @@ gem 'mousetrap-rails'
 # Semantic UI Sass for Sidebar
 gem 'semantic-ui-sass', '~> 0.16.1.0'
 
-gem "sass-rails", '~> 4.0.2'
-gem "coffee-rails"
+gem "sass-rails", "~> 5.0.5"
+gem "coffee-rails", ">= 4.1.1"
 gem "uglifier"
 gem "therubyracer"
 gem 'turbolinks'
@@ -172,14 +172,14 @@ gem 'jquery-turbolinks'
 
 gem 'select2-rails'
 gem 'jquery-atwho-rails', "~> 0.3.3"
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.0.1"
 gem "jquery-ui-rails"
 gem "jquery-scrollto-rails"
 gem "raphael-rails", "~> 2.1.2"
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
+gem "font-awesome-rails", "~> 4.5", ">= 4.5.0.1"
 gem "gitlab_emoji", "~> 0.0.1.1"
-gem "gon", '~> 5.0.0'
+gem "gon", "~> 5.0.1"
 gem 'nprogress-rails'
 gem 'request_store'
 gem "virtus"
@@ -187,7 +187,7 @@ gem "virtus"
 group :development do
   gem "annotate", "~> 2.6.0.0"
   gem "letter_opener"
-  gem 'quiet_assets', '~> 1.0.1'
+  gem 'quiet_assets', '~> 1.0.2'
   gem 'rack-mini-profiler', require: false
 
   # Better errors handler
@@ -208,7 +208,7 @@ group :development, :test do
   # gem 'rails-dev-tweaks'
   gem 'spinach-rails'
   gem "rspec-rails"
-  gem "capybara", '~> 2.2.1'
+  gem "capybara", "~> 2.2.1"
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
