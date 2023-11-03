@@ -84,7 +84,7 @@ gem "github-markup"
 
 # Required markup gems by github-markdown
 gem 'redcarpet', '~> 3.1.2'
-gem 'RedCloth'
+gem 'RedCloth', '>= 4.3.3'
 gem 'rdoc', '~>3.6'
 gem 'org-ruby'
 gem 'creole', '~>0.3.6'
