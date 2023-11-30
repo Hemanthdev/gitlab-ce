@@ -64,7 +64,7 @@ gem "kaminari", "~> 0.15.1"
 gem "haml-rails"
 
 # Files attachments
-gem "carrierwave"
+gem "carrierwave", ">= 2.2.5"
 
 # Drag and Drop UI
 gem 'dropzonejs-rails'
