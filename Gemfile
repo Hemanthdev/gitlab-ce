@@ -125,7 +125,7 @@ gem "foreman"
 gem 'version_sorter'
 
 # Cache
-gem "redis-rails"
+gem "redis-rails", ">= 5.0.2"
 
 # Campfire integration
 gem 'tinder', '~> 1.9.2'
