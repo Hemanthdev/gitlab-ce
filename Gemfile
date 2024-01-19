@@ -108,7 +108,7 @@ gem "acts-as-taggable-on", ">= 3.1.0"
 
 # Background jobs
 gem 'slim'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 4.0.0', require: nil
 gem 'sidekiq', '2.17.0'
 
 # HTTP requests
