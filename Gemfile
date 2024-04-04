@@ -8,10 +8,10 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 5.2.8", ">= 5.2.8.1"
+gem "rails", "~> 7.0.8", ">= 7.0.8.1"
 
 # Make links from text
-gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
+gem 'rails_autolink', '~> 1.1', '>= 1.1.7'
 
 # Default values for AR models
 gem "default_value_for", "~> 3.1.0"
@@ -21,13 +21,13 @@ gem "mysql2", group: :mysql
 gem "pg", group: :postgres
 
 # Auth
-gem "devise", '3.2.4'
-gem "devise-async", '0.9.0'
-gem 'omniauth', '~> 2.0.0'
-gem 'omniauth-google-oauth2'
-gem 'omniauth-twitter'
-gem 'omniauth-github', '>= 2.0.0'
-gem 'omniauth-shibboleth'
+gem "devise", "4.7.0"
+gem "devise-async", "1.0.0"
+gem 'omniauth', '~> 1.3.1'
+gem 'omniauth-google-oauth2', '>= 0.2.6'
+gem 'omniauth-twitter', '>= 1.1.0'
+gem 'omniauth-github', '>= 1.1.2'
+gem 'omniauth-shibboleth', '>= 1.1.2'
 
 # Extracting information from a git repository
 # Provide access to Gitlab::Git library
@@ -37,16 +37,16 @@ gem "gitlab_git", '~> 6.0'
 gem 'gitlab-grack', '~> 2.0.0.pre', require: 'grack'
 
 # LDAP Auth
-gem 'gitlab_omniauth-ldap', '2.2.0', require: "omniauth-ldap"
+gem 'gitlab_omniauth-ldap', '1.2.0', require: "omniauth-ldap"
 
 # Git Wiki
-gem 'gollum-lib', '~> 3.0.0'
+gem 'gollum-lib', '~> 4.2.7'
 
 # Language detection
 gem "gitlab-linguist", "~> 3.0.0", require: "linguist"
 
 # API
-gem "grape", "~> 0.6.1"
+gem "grape", "~> 0.7.0"
 gem "grape-entity", "~> 0.4.2"
 gem 'rack-cors', require: 'rack/cors'
 
@@ -58,19 +58,19 @@ gem "stamp"
 gem 'enumerize'
 
 # Pagination
-gem "kaminari", "~> 0.15.1"
+gem "kaminari", "~> 0.16.0"
 
 # HAML
-gem "haml-rails"
+gem "haml-rails", ">= 0.6.0"
 
 # Files attachments
-gem "carrierwave"
+gem "carrierwave", ">= 2.2.6"
 
 # Drag and Drop UI
-gem 'dropzonejs-rails'
+gem 'dropzonejs-rails', '>= 0.4.16'
 
 # for aws storage
-gem "fog", "~> 1.14", group: :aws
+gem "fog", "~> 1.22", ">= 1.22.0", group: :aws
 gem "unf", group: :aws
 
 # Authorization
@@ -85,7 +85,7 @@ gem "github-markup"
 # Required markup gems by github-markdown
 gem 'redcarpet', '~> 3.1.2'
 gem 'RedCloth'
-gem 'rdoc', '~>3.6'
+gem 'rdoc', '~> 6.3', '>= 6.3.4.1'
 gem 'org-ruby'
 gem 'creole', '~>0.3.6'
 gem 'wikicloth', '=0.8.1'
@@ -96,8 +96,8 @@ gem 'diffy', '~> 3.0.3'
 
 # Application server
 group :unicorn do
-  gem "unicorn", '~> 4.6.3'
-  gem 'unicorn-worker-killer'
+  gem "unicorn", "~> 4.7.0"
+  gem 'unicorn-worker-killer', '>= 0.4.3'
 end
 
 # State machine
@@ -108,7 +108,7 @@ gem "acts-as-taggable-on", ">= 3.1.0"
 
 # Background jobs
 gem 'slim'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 2.0.0', require: nil
 gem 'sidekiq', '2.17.0'
 
 # HTTP requests
@@ -125,7 +125,7 @@ gem "foreman"
 gem 'version_sorter'
 
 # Cache
-gem "redis-rails"
+gem "redis-rails", ">= 5.0.2"
 
 # Campfire integration
 gem 'tinder', '~> 1.9.2'
@@ -143,16 +143,16 @@ gem "gemnasium-gitlab-service", "~> 0.2"
 gem "slack-notifier", "~> 0.3.2"
 
 # d3
-gem "d3_rails", "~> 3.1.4"
+gem "d3_rails", "~> 3.2.0"
 
 # underscore-rails
 gem "underscore-rails", "~> 1.4.4"
 
 # Sanitize user input
-gem "sanitize", '~> 2.0'
+gem "sanitize", "~> 2.1", ">= 2.1.1"
 
 # Protect against bruteforcing
-gem "rack-attack"
+gem "rack-attack", ">= 3.0.0"
 
 # Ace editor
 gem 'ace-rails-ap'
@@ -163,23 +163,23 @@ gem 'mousetrap-rails'
 # Semantic UI Sass for Sidebar
 gem 'semantic-ui-sass', '~> 0.16.1.0'
 
-gem "sass-rails", '~> 4.0.2'
-gem "coffee-rails"
+gem "sass-rails", "~> 5.0.8"
+gem "coffee-rails", ">= 4.2.2"
 gem "uglifier"
 gem "therubyracer"
-gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem 'turbolinks', '>= 2.1.0'
+gem 'jquery-turbolinks', '>= 2.0.2'
 
 gem 'select2-rails'
 gem 'jquery-atwho-rails', "~> 0.3.3"
-gem "jquery-rails"
-gem "jquery-ui-rails"
+gem "jquery-rails", ">= 4.0.1"
+gem "jquery-ui-rails", ">= 5.0.0"
 gem "jquery-scrollto-rails"
 gem "raphael-rails", "~> 2.1.2"
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
+gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.8"
 gem "gitlab_emoji", "~> 0.0.1.1"
-gem "gon", '~> 5.0.0'
+gem "gon", "~> 5.0.3"
 gem 'nprogress-rails'
 gem 'request_store'
 gem "virtus"
@@ -187,8 +187,8 @@ gem "virtus"
 group :development do
   gem "annotate", "~> 2.6.0.0"
   gem "letter_opener"
-  gem 'quiet_assets', '~> 1.0.1'
-  gem 'rack-mini-profiler', require: false
+  gem 'quiet_assets', '~> 1.0.3'
+  gem 'rack-mini-profiler', '>= 0.9.1', require: false
 
   # Better errors handler
   gem 'better_errors'
@@ -197,23 +197,23 @@ group :development do
   gem 'rails_best_practices'
 
   # Docs generator
-  gem "sdoc"
+  gem "sdoc", ">= 1.0.0"
 
   # thin instead webrick
-  gem 'thin'
+  gem 'thin', '>= 1.6.2'
 end
 
 group :development, :test do
   gem 'coveralls', require: false
   # gem 'rails-dev-tweaks'
   gem 'spinach-rails'
-  gem "rspec-rails"
-  gem "capybara", '~> 2.2.1'
+  gem "rspec-rails", ">= 2.14.1"
+  gem "capybara", "~> 2.3.0"
   gem "pry"
   gem "awesome_print"
   gem "database_cleaner"
   gem "launchy"
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.4.0'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
   gem 'minitest', '~> 5.3.0'
@@ -231,9 +231,9 @@ group :development, :test do
   gem 'rb-inotify', require: linux_only('rb-inotify')
 
   # PhantomJS driver for Capybara
-  gem 'poltergeist', '~> 1.5.1'
+  gem 'poltergeist', '~> 1.6.0'
 
-  gem 'jasmine', '2.0.2'
+  gem 'jasmine', '2.0.3'
 
   gem "spring", '1.1.3'
   gem "spring-commands-rspec", '1.0.1'
