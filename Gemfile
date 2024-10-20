@@ -8,10 +8,10 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 5.2.8", ">= 5.2.8.1"
+gem "rails", "~> 7.0.0"
 
 # Make links from text
-gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
+gem 'rails_autolink', '~> 1.1', '>= 1.1.8'
 
 # Default values for AR models
 gem "default_value_for", "~> 3.1.0"
@@ -58,7 +58,7 @@ gem "stamp"
 gem 'enumerize'
 
 # Pagination
-gem "kaminari", "~> 0.15.1"
+gem "kaminari", "~> 1.0.0"
 
 # HAML
 gem "haml-rails"
@@ -163,11 +163,11 @@ gem 'mousetrap-rails'
 # Semantic UI Sass for Sidebar
 gem 'semantic-ui-sass', '~> 0.16.1.0'
 
-gem "sass-rails", '~> 4.0.2'
+gem "sass-rails", "~> 6.0.0"
 gem "coffee-rails"
 gem "uglifier"
 gem "therubyracer"
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'jquery-turbolinks'
 
 gem 'select2-rails'
